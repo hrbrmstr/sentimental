@@ -1,0 +1,74 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+`sentimental` : Tools to Work with the [`text-processing.com`](text-processing.com) API.
+
+If you have modest NLP needs, this API package provides an alternative to getting Java-based packages to work or performing processing on your local system.
+
+NOTE: There is a limit of 1,000 API calls per day imposed by the API.
+
+The following functions are implemented:
+
+- `part_of_speech`:	Part-of-peech tagging and chunking on text
+phrase_extract`:	Phrase extraction & named entity recognition on text
+- `sentiment`:	Analyze the sentiment of text
+- `sentimental`:	Tools to Work with the 'text-processing.com' API
+- `stem`:	Perform word stemming on text
+
+### TODO
+
+- CRAN
+- S-expression parser (convert string to a `list`)
+
+### Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/sentimental")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+options(width=120)
+```
+
+### Usage
+
+```{r}
+library(sentimental)
+
+# current verison
+packageVersion("sentimental")
+
+```
+
+### Test Results
+
+```{r}
+library(sentimental)
+library(testthat)
+
+date()
+
+sentiment("hi friend")
+
+stem("interestingly enough they overwhelmingly supported the wrong candidate")
+
+part_of_speech("Maine is nice")
+
+phrase_extract("Maine is nice")
+```
+
+### Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
+By participating in this project you agree to abide by its terms.

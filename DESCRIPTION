@@ -1,9 +1,18 @@
 Package: sentimental
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
+Title: Tools to Work with the 'text-processing.com' API
+Version: 0.1.0.9000
 Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.3.1)
+Description: Tools to Work with the 'text-processing.com' API.
+URL: http://github.com/hrbrmstr/sentimental
+BugReports: https://github.com/hrbrmstr/sentimental/issues
+Depends:
+    R (>= 3.0.0)
 License: AGPL + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+  httr,
+  jsonlite
+Suggests:
+    testthat
+RoxygenNote: 5.0.1
