@@ -46,7 +46,7 @@ library(sentimental)
 library(testthat)
 
 date()
-#> [1] "Sun Jul 24 07:59:41 2016"
+#> [1] "Sun Jul 24 08:01:36 2016"
 
 sentiment("hi friend")
 #> $probability
@@ -67,9 +67,9 @@ stem("interestingly enough they overwhelmingly supported the wrong candidate")
 #> $text
 #> [1] "interestingli enough they overwhelmingli support the wrong candid"
 
-part_of_speech("Maine is nice")
+part_of_speech("hello world")
 #> $text
-#> [1] "(S (GPE Maine/NNP) is/VBZ nice/JJ)"
+#> [1] "(S hello/NN world/NN)"
 
 phrase_extract("Maine is nice")
 #> $text

@@ -63,7 +63,7 @@ sentiment("hi friend")
 
 stem("interestingly enough they overwhelmingly supported the wrong candidate")
 
-part_of_speech("Maine is nice")
+part_of_speech("hello world")
 
 phrase_extract("Maine is nice")
 ```
