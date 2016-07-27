@@ -10,7 +10,7 @@ The following functions are implemented:
 
 -   `part_of_speech`: Part-of-peech tagging and chunking on text phrase\_extract\`: Phrase extraction & named entity recognition on text
 -   `sentiment`: Analyze the sentiment of text
--   `sentimental`: Tools to Work with the 'text-processing.com' API
+-   `sentimental`: Tools to Work with the '[text-processing.com](http://text-processing.com/)' API
 -   `stem`: Perform word stemming on text
 
 ### TODO
